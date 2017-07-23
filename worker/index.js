@@ -1,6 +1,5 @@
 const request = require('request');
 const cheerio = require('cheerio');
-const _ = require('lodash');
 const url = require('url');
 const redis = require('redis');
 const schedule = require('node-schedule');
