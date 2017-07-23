@@ -1,0 +1,11 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "redis": "^2.7.1",
+    "send-webhook": "^1.0.0"
+  }
+}

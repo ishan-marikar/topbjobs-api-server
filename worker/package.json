@@ -1,0 +1,13 @@
+{
+  "name": "topjobs-scraper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "cheerio": "^1.0.0-rc.2",
+    "node-schedule": "^1.2.3",
+    "redis": "^2.7.1",
+    "request": "^2.81.0"
+  }
+}

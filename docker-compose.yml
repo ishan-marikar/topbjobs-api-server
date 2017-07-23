@@ -1,0 +1,35 @@
+version: "2.2"
+
+services: 
+  
+  worker:
+    build: "./worker"
+    environment:
+      - NODE_ENV=production
+      - REDIS_URL=redis
+    networks:
+      - backend
+    depends_on:
+      - redis
+  
+  api: 
+    build: "./api"
+    environment:
+      - NODE_ENV=production
+      - REDIS_URL=redis
+    networks:
+      - backend
+    depends_on:
+      - redis
+    ports:
+      - "8080:8080"
+
+  redis: 
+    image: redis
+    networks:
+      - backend
+
+
+
+networks:
+  backend:
